@@ -52,7 +52,8 @@ For the most part this dataset was clean, but I did two cleanup tasks.
 [EDA Notebook](https://github.com/apawar93/Data-Science-Capstone-Project/blob/main/Capstone%20-%20EDA.ipynb)
 
 Most of the numeric columns were left skewed
-      (Insert snapshots here)
+
+
 
 Age vs interest rate, amount vs rate, years employed vs. rate, credit history vs rate all were inversely related to one another
 
@@ -104,10 +105,15 @@ The most accurate model of these four was the CatBoost model, as it had the high
 
 For the Logistic Regression and CatBoost models I calculated and plotted the feature importance.
 
-1. **Logistic Regression:** For the Logistic Regression the only two features that were important were the loan amount and income, which explins why it had the lowest accuracy of the four models:
-            (Insert Logistic Regression Feature Importance snapshot)
+1. **Logistic Regression:** The Logistic Regression only had two features that were important which explains why it had the lowest accuracy of the four models:
+
+(Insert Logistic Regression Feature Importance snapshot)
             
-2. 
+2. **CatBoost:** The CatBoost model had 8 features that were important, which explains why it had the highest accuracy of the four models:
+
+(Insert CatBoost Feature Importance snapshot)
+
+
 
 
 
