@@ -21,35 +21,31 @@ The dataset I used comes from Kaggle and has information on 32587 borrowers with
       
 > * [Kaggle Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset?select=credit_risk_dataset.csv)
 
-## 2. Method
+## 2. Steps
 
-There are three main types of recommenders used in practice today:
+The steps I took to create this model were:
 
-1. **Content-based filter:** Recommending future items to the user that have similar innate features with previously "liked" items. Basically, content-based relies on similarities between features of the items & needs good item profiles to function properly.
+1. **Data Wrangling:** Uploaded and cleaned the dataset, identified columns with null values and replaced those values, checked for other anomalies in the data, and checked if the data types of the columns were right
 
-2. **Collaborative-based filter:** Recommending products based on a similar user that has already rated the product. Collaborative filtering relies on information from similar users, and it is important to have a large explicit user rating  base (doesn't work well for new customer bases).
+2. **Exploratoty Data Analysis (EDA):** Looked at relationship and trends between different columns, distribution of numeric columns, and breakdown of object columns
 
-3. **Hybrid Method:** Leverages both content & collaborative based filtering. Typically, when a new user comes into the recommender, the content-based recommendation takes place. Then after interacting with the items a couple of times, the collaborative/ user based recommendation system will be utilized.
+3. **Preprocessing:** Created dummy variables out of object columns, created a X set of features and Y set of the main target variable (default), and did a 80%-20% train-test split for modelling
 
-![](./6_README_files/matrix_example.png)
+4. **Modelling:** Used four classification models to fit the data and calculated the accuracy score, confusion matrix, and ROC-AUC score and curve for each model to see which was the most accurate one
+
+5.**Feature Importance:** For two of the models (Logistic Regression & CatBoost) calculated which fetures are the most important in explaining the variance in the main target variable 
 
 
-**WINNER:User-based collaborative filtering system** 
+## 3. Data Wrangling 
 
+[Data Wrangling](https://github.com/apawar93/Data-Science-Capstone-Project/blob/main/Capstone%20-%20Data%20Wrangling.ipynb)
 
-I choose to work with a user-based collaborative filtering system. This made the most sense because half of the 4 million user-entered climbs had an explicit rating of how many stars the user would rate the climb. Unfortunately, the data did not have very detailed "item features". Every rock climbing route had an area, a difficulty grade, and a style of climbing (roped or none). This would not have been enough data to provide an accurate content-based recommendation. In the future, I would love to experiment using a hybrid system to help solve the problem of the cold-start-threshold.
+For the most part this dataset was clean, but I did two cleanup tasks.
 
-## 3. Data Cleaning 
+* **Task 1:** The interest rate and years employed columns had null values. I used their median values to replace the values as the data for them was left skewed
 
-[Data Cleaning Report](https://drive.google.com/open?id=195wcooDtT2XhfpRXREWmLovm8XZPNymy)
+* **Task 2:** Other data anomalies I noticed were that some borrowers were more than 100 years old and/or had more than 40 years of work experience. These were clearly data entry errors. The solution for this was simply deleteing those rows. 
 
-In a collaborative-filtering system there are only three columns that matter to apply the machine learning algorithms: the user, the item, and the explicit rating (see the example matrix above). I also had to clean & normalize all the reference information (location, difficulty grade, etc.) to the route so that my user could get a useful and informative recommendation.
-
-* **Problem 1:** This dataset is all user-entered information. There are a couple drop down options, but for the most part the user is able to completely make-up, or list something incorrectly. **Solution:** after normalizing & cleaning all the columns, I created a three-tier groupby system that I could then take the mode of each entry and fill in the column with that mode. For example: a route listed 12 times had the country Greece associated with it 11 times, but one person incorrectly listed it located in the USA. By grouping together three other indicator columns and then computing the mode of the country, I was able to catch and change some of the user-entered errors and increase the accuracy of my dataset.
-
-* **Problem 2:** Being this is an international rock climbing website, the names of the rock climbing routes were differing based on if the user enters accent marks or not. **Solution:** normalize all names to the ascii standards. 
-
-* **Problem 3:** Spelling issues with the route name. For example: if there was a route named "red rocks canyon" it could be spelled "red rock", "red rocks", "red canyon" etc. **Solution:** at first, I was hopeful and tried two different phonetic spelling algorithms (soundex & double metahpone). However, both of these proved to be too aggressive in their grouping and sometimes would group together up to 20 different individual routes as the same item! My final solution was to create an accurate filter for route names. The logic being that if up to x number of users all entered that *exact same* route name, the chances were good that it was an actual route spelled correctly. I played around with 4 different filters and kept these until I could test their prediction accuracy in the ML portion. I found the greatest prediction accuracy came from the dataset that filtered out any routes listed less than 6 times.
 
 ## 4. EDA
 
