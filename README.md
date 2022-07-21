@@ -35,6 +35,8 @@ The steps I took to create this model were:
 
 5. **Feature Importance:** For two of the models (Logistic Regression & CatBoost) calculated which features are the most important in explaining the variance in the main target variable 
 
+6. **Modelling For Non-Defaulters:** Repeated steps 4 & 5 for borrowers who didn't default to see if the accuracy of the models would change or not
+
 
 ## 3. Data Wrangling 
 
@@ -113,15 +115,26 @@ For the Logistic Regression and CatBoost models I calculated and plotted the fea
 
 (Insert CatBoost Feature Importance snapshot)
 
+### Modeling For Non-Defaulters
 
+In this step I ran the same four classification models, by filtering out borrowers who defaulted before. I wanted to see how accurate the models would be if the bank didn't know if a borrower had defaulted before or not.
 
+These were the notable changes that occurred:
 
+1. The accuracy of the Logistic Regression & kNN model increased:
+
+(Insert snapshot of accuracy score for ND)
+
+2. For the Logistic Regression the number of feature importances increased
+
+(Insert snapshot for FI for Logistic Regression ND)
+
+(Insert snapshot of ROC-AUC curve for ND)
 
 
 ## 7. Next Steps
 
 After identifying the most accurate models, the next step will be create a program that will allow the user the to enter in information on a potential borrower that will generate a prediction if the borrower will default or not. Furthermore it will allow the user to increase or decrease some of the inputs such as loan amount and interest rate, to see which loan can be given to the borrower so that the borrower will not default.
-
 
 ## 8. Credits
 
