@@ -19,7 +19,7 @@ The dataset I used comes from Kaggle and has information on 32587 borrowers with
       Loan Amount(% Income)
       Income
       
-> * [Kaggle Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset?select=credit_risk_dataset.csv)
+[Kaggle Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset?select=credit_risk_dataset.csv)
 
 ## 2. Steps
 
@@ -42,31 +42,31 @@ The steps I took to create this model were:
 
 For the most part this dataset was clean, but I did two cleanup tasks.
 
-* **Task 1:** The interest rate and years employed columns had null values. I used their median values to replace the values as the data for them was left skewed
+**Task 1:** The interest rate and years employed columns had null values. I used their median values to replace the values as the data for them was left skewed
 
-* **Task 2:** Other data anomalies I noticed were that some borrowers were more than 100 years old and/or had more than 40 years of work experience. These were clearly data entry errors. The solution for this was simply deleteing those rows. 
+**Task 2:** Other data anomalies I noticed were that some borrowers were more than 100 years old and/or had more than 40 years of work experience. These were clearly data entry errors. The solution for this was simply deleteing those rows. 
 
 
 ## 4. EDA
 
 [EDA Notebook](https://github.com/apawar93/Data-Science-Capstone-Project/blob/main/Capstone%20-%20EDA.ipynb)
 
-* Most of the numeric columns were left skewed
+Most of the numeric columns were left skewed
       (Insert snapshots here)
 
-* Age vs interest rate, amount vs rate, years employed vs. rate, credit history vs rate all were inversely related to one another
+Age vs interest rate, amount vs rate, years employed vs. rate, credit history vs rate all were inversely related to one another
 
       (Insert snapshots here)
 
-* There were more non-defaulters than defaulters
+There were more non-defaulters than defaulters
    (Insert snapshot here)
 
 
-* Most of the borrowers were renters or had a mortgage 
+Most of the borrowers were renters or had a mortgage 
       (Insert snapshot here)
 
 
-* Most of the loan grades were "good" and were in A and B grade loans
+Most of the loan grades were "good" and were A and B grade loans
 
       (Insert snapshot)
 
@@ -76,7 +76,7 @@ For the most part this dataset was clean, but I did two cleanup tasks.
 
 [Preprocessing Notebook](https://github.com/apawar93/Data-Science-Capstone-Project/blob/main/Capstone%20-%20Pre-Processing%20%26%20Data%20Training.ipynb)
 
-> Created dummy variables out of the object columns home ownership, loan intent, loan grade, and whether or not a borrower defaulted on a loan before. The dataset ended up having 27 columns. Here is the correlation of each of the columns with the default variable:
+Created dummy variables out of the object columns home ownership, loan intent, loan grade, and whether or not a borrower defaulted on a loan before. The dataset ended up having 27 columns. Here is the correlation of each of the columns with the default variable:
 
       (Insert snapshot of correlation)
 
@@ -91,7 +91,7 @@ Since the main target variable for binary, I decided to use classification model
       3. Decision Tree (Gini & Entropy)
       4. CatBoost
 
->The most accurate model of these four was the CatBoost model, as it had a high accuracy of 95% and a AUC Score of 86%
+The most accurate model of these four was the CatBoost model, as it had the high accuracy of 95% and an AUC Score of 86%
       (Insert snapshot of ROC-AUC Curve)
       
       (Insert snapshot of accuracy scores)
