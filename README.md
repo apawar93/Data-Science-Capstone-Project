@@ -33,7 +33,7 @@ The steps I took to create this model were:
 
 4. **Modelling:** Used four classification models to fit the data and calculated the accuracy score, confusion matrix, and ROC-AUC score and curve for each model to see which was the most accurate one
 
-5. **Feature Importance:** For two of the models (Logistic Regression & CatBoost) calculated which fetures are the most important in explaining the variance in the main target variable 
+5. **Feature Importance:** For two of the models (Logistic Regression & CatBoost) calculated which features are the most important in explaining the variance in the main target variable 
 
 
 ## 3. Data Wrangling 
@@ -85,7 +85,7 @@ Created dummy variables out of the object columns home ownership, loan intent, l
 
 [Modelling Notebook](https://github.com/apawar93/Data-Science-Capstone-Project/blob/main/Capstone%20-%20Modeling.ipynb)
 
-Since the main target variable for binary, I decided to use classification models:
+Since the main target variable is binary, I decided to use classification models:
 
 1. **Logistic Regression**
 2. **kNN**
@@ -101,6 +101,14 @@ The most accurate model of these four was the CatBoost model, as it had the high
 
 
 ### Feature Importance
+
+For the Logistic Regression and CatBoost models I calculated and plotted the feature importance.
+
+1. **Logistic Regression:** For the Logistic Regression the only two features that were important were the loan amount and income, which explins why it had the lowest accuracy of the four models:
+            (Insert Logistic Regression Feature Importance snapshot)
+            
+2. 
+
 
 
 
