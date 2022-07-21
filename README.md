@@ -33,7 +33,7 @@ The steps I took to create this model were:
 
 4. **Modelling:** Used four classification models to fit the data and calculated the accuracy score, confusion matrix, and ROC-AUC score and curve for each model to see which was the most accurate one
 
-5.**Feature Importance:** For two of the models (Logistic Regression & CatBoost) calculated which fetures are the most important in explaining the variance in the main target variable 
+5. **Feature Importance:** For two of the models (Logistic Regression & CatBoost) calculated which fetures are the most important in explaining the variance in the main target variable 
 
 
 ## 3. Data Wrangling 
@@ -44,7 +44,7 @@ For the most part this dataset was clean, but I did two cleanup tasks.
 
 **Task 1:** The interest rate and years employed columns had null values. I used their median values to replace the values as the data for them was left skewed
 
-**Task 2:** Other data anomalies I noticed were that some borrowers were more than 100 years old and/or had more than 40 years of work experience. These were clearly data entry errors. The solution for this was simply deleteing those rows. 
+**Task 2:** Other data anomalies I noticed were that some borrowers were more than 100 years old and/or had more than 40 years of work experience. These were clearly data entry errors so I just filtered out rows in which the age was more than 100 and the years employed was more than 40. 
 
 
 ## 4. EDA
