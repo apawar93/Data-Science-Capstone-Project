@@ -86,12 +86,16 @@ Created dummy variables out of the object columns home ownership, loan intent, l
 [Modelling Notebook](https://github.com/apawar93/Data-Science-Capstone-Project/blob/main/Capstone%20-%20Modeling.ipynb)
 
 Since the main target variable for binary, I decided to use classification models:
-      **1.** Logistic Regression
-      **2.** kNN
-      **3.** Decision Tree (Gini & Entropy)
-      **4.** CatBoost
+      1. **Logistic Regression**
+      
+      2. **kNN**
+      
+      3. **Decision Tree (Gini & Entropy)**
+      
+      4. **CatBoost**
 
 The most accurate model of these four was the CatBoost model, as it had the high accuracy of 95% and an AUC Score of 86%
+
       (Insert snapshot of ROC-AUC Curve)
       
       (Insert snapshot of accuracy scores)
