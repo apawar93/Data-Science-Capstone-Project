@@ -76,17 +76,20 @@ Age vs interest rate, amount vs rate, years employed vs. rate, credit history vs
 
 ![](./Snaps/Employed%20vs.%20Rate.PNG)                       ![](./Snaps/History%20vs.%20Rate.PNG)                       
 
+
 There were more non-defaulters than defaulters
-   (Insert snapshot here)
+
+![](./Snaps/Default%20Graph.PNG)
 
 
 Most of the borrowers were renters or had a mortgage 
-      (Insert snapshot here)
+
+![](./Snaps/Home%20ownership%20graph.PNG)
 
 
 Most of the loan grades were "good" and were A and B grade loans
 
-      (Insert snapshot)
+![](./Snaps/Loan%20Grade%20Graph.PNG)
 
 
 
@@ -96,7 +99,7 @@ Most of the loan grades were "good" and were A and B grade loans
 
 Created dummy variables out of the object columns home ownership, loan intent, loan grade, and whether or not a borrower defaulted on a loan before. The dataset ended up having 27 columns. Here is the correlation of each of the columns with the default variable:
 
-      (Insert snapshot of correlation)
+![](./Snaps/Spearman%20Correlation.PNG)
 
 
 ## 6. Modelling
@@ -110,12 +113,12 @@ Since the main target variable is binary, I decided to use classification models
 3. **Decision Tree (Gini & Entropy)**
 4. **CatBoost**
 
-The most accurate model of these four was the CatBoost model, as it had the high accuracy of 95% and an AUC Score of 86%
+The most accurate model of these four was the CatBoost model, as it had the highest accuracy of 95% and an AUC Score of 86%
 
-      (Insert snapshot of ROC-AUC Curve)
-      
-      (Insert snapshot of accuracy scores)
+![](./Snaps/Snaps/Accuracy.PNG)
 
+
+![](./Snaps/Snaps/ROC-AUC%20Curve.PNG)
 
 
 ### Feature Importance
@@ -124,11 +127,14 @@ For the Logistic Regression and CatBoost models I calculated and plotted the fea
 
 1. **Logistic Regression:** The Logistic Regression only had two features that were important which explains why it had the lowest accuracy of the four models:
 
-(Insert Logistic Regression Feature Importance snapshot)
+![](./Snaps/Snaps/LG%20Feature%20Importance.PNG)
+
             
 2. **CatBoost:** The CatBoost model had 8 features that were important, which explains why it had the highest accuracy of the four models:
 
-(Insert CatBoost Feature Importance snapshot)
+![](./Snaps/Snaps/CB%20Feature%20Importance.PNG)
+
+
 
 ### Modeling For Non-Defaulters
 
