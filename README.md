@@ -115,10 +115,10 @@ Since the main target variable is binary, I decided to use classification models
 
 The most accurate model of these four was the CatBoost model, as it had the highest accuracy of 95% and an AUC Score of 86%
 
-![](./Snaps/Snaps/Accuracy.PNG)
+![](./Snaps/Accuracy.PNG)
 
 
-![](./Snaps/Snaps/ROC-AUC%20Curve.PNG)
+![](./Snaps/ROC-AUC%20Curve.PNG)
 
 
 ### Feature Importance
