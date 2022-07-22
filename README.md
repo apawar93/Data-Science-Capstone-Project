@@ -58,6 +58,12 @@ Most of the numeric columns were left skewed:
 ![](./Snaps/Age%20Dist.PNG)
 
 
+![](./Snaps/Credit%20History%20Dist.PNG)
+
+
+
+
+
 
 Age vs interest rate, amount vs rate, years employed vs. rate, credit history vs rate all were inversely related to one another
 
