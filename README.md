@@ -127,12 +127,12 @@ For the Logistic Regression and CatBoost models I calculated and plotted the fea
 
 1. **Logistic Regression:** The Logistic Regression only had two features that were important which explains why it had the lowest accuracy of the four models:
 
-![](./Snaps/Snaps/LG%20Feature%20Importance.PNG)
+![](./Snaps/LG%20Feature%20Importance.PNG)
 
             
 2. **CatBoost:** The CatBoost model had 8 features that were important, which explains why it had the highest accuracy of the four models:
 
-![](./Snaps/Snaps/CB%20Feature%20Importance.PNG)
+![](./Snaps/CB%20Feature%20Importance.PNG)
 
 
 
