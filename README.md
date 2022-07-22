@@ -55,12 +55,15 @@ For the most part this dataset was clean, but I did two cleanup tasks.
 
 Most of the numeric columns were left skewed:
 
-![](./Snaps/Age%20Dist.PNG)
+![](./Snaps/Age%20Dist.PNG)                                                         ![](./Snaps/Amount%20Dist.PNG)
 
 
-![](./Snaps/Credit%20History%20Dist.PNG)
+![](./Snaps/Credit%20History%20Dist.PNG)                                            ![](./Snaps/Rate%20Distribution.PNG)
 
 
+
+
+![](./Snaps/Years%20Employed%20Dist.PNG)
 
 
 
