@@ -70,11 +70,11 @@ Most of the numeric columns were left skewed:
 
 Age vs interest rate, amount vs rate, years employed vs. rate, credit history vs rate all were inversely related to one another
 
-![](./Snaps/Age%20vs.%20Rate.PNG)                           ![](./Snaps/Amount%20vs.%20Rate.PNG)
+![](./Snaps/Age%20vs.%20Rate.PNG)                            ![](./Snaps/Amount%20vs.%20Rate.PNG)
 
 
 
-![](./Snaps/Employed%20vs.%20Rate.PNG)                      ![](./Snaps/History%20vs.%20Rate.PNG)                       
+![](./Snaps/Employed%20vs.%20Rate.PNG)                       ![](./Snaps/History%20vs.%20Rate.PNG)                       
 
 There were more non-defaulters than defaulters
    (Insert snapshot here)
