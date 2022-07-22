@@ -146,11 +146,14 @@ These were the notable changes that occurred:
 
 ![](./Snaps/Accuracy%20ND.PNG)
 
-2. For the Logistic Regression the number of feature importances increased
 
-(Insert snapshot for FI for Logistic Regression ND)
+![](./Snaps/ROC-AUC%20Curve%20ND.PNG)
 
-(Insert snapshot of ROC-AUC curve for ND)
+
+
+2. For the Logistic Regression the number of feature importances increased:
+
+![](./Snaps/LG%20Feature%20Importance%20ND.PNG)
 
 
 ## 7. Next Steps
@@ -159,4 +162,4 @@ After identifying the most accurate models, the next step will be create a progr
 
 ## 8. Credits
 
-I would like to thank my Springboard mentor Mukesh Mithrakumar for his guidance support and help on this project.
+I would like to thank my Springboard mentor Mukesh Mithrakumar for his guidance, support, insights, and help on this project.
