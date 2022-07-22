@@ -53,7 +53,9 @@ For the most part this dataset was clean, but I did two cleanup tasks.
 
 [EDA Notebook](https://github.com/apawar93/Data-Science-Capstone-Project/blob/main/Capstone%20-%20EDA.ipynb)
 
-Most of the numeric columns were left skewed
+Most of the numeric columns were left skewed:
+
+![](./Snaps/Age Dist.png)
 
 
 
