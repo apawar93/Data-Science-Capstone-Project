@@ -55,7 +55,7 @@ For the most part this dataset was clean, but I did two cleanup tasks.
 
 Most of the numeric columns were left skewed:
 
-![](./Snaps/Age Dist.PNG)
+![](./Snaps/Age%20Dist.PNG)
 
 
 
