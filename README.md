@@ -144,7 +144,7 @@ These were the notable changes that occurred:
 
 1. The accuracy of the Logistic Regression & kNN model increased:
 
-(Insert snapshot of accuracy score for ND)
+![](./Snaps/Accuracy%20ND.PNG)
 
 2. For the Logistic Regression the number of feature importances increased
 
